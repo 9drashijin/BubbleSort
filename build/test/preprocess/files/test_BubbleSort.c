@@ -101,3 +101,49 @@ void test_sortLargestToRightMost_should_move_largest_to_the_end_for_4_element(){
  UnityAssertEqualNumber((_U_SINT)((10)), (_U_SINT)((array[3])), (((void *)0)), (_U_UINT)52, UNITY_DISPLAY_STYLE_INT);
 
 }
+
+void test_bubbleSort_should_sort_properly_2_element(){
+
+ int array [] ={34,23};
+
+ bubbleSort(array, sizeof(array)/sizeof(int));
+
+ UnityAssertEqualNumber((_U_SINT)((23)), (_U_SINT)((array[0])), (((void *)0)), (_U_UINT)57, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((34)), (_U_SINT)((array[1])), (((void *)0)), (_U_UINT)58, UNITY_DISPLAY_STYLE_INT);
+
+
+
+}
+
+void test_bubbleSort_should_sort_properly_3_element(){
+
+ int array [] ={33,22,11};
+
+ bubbleSort(array, sizeof(array)/sizeof(int));
+
+ UnityAssertEqualNumber((_U_SINT)((11)), (_U_SINT)((array[0])), (((void *)0)), (_U_UINT)64, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((22)), (_U_SINT)((array[1])), (((void *)0)), (_U_UINT)65, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((33)), (_U_SINT)((array[2])), (((void *)0)), (_U_UINT)66, UNITY_DISPLAY_STYLE_INT);
+
+}
+
+void test_bubbleSort_should_sort_properly_5_element(){
+
+ int array [] ={33,22,11,8,3};
+
+ bubbleSort(array, sizeof(array)/sizeof(int));
+
+ UnityAssertEqualNumber((_U_SINT)((3)), (_U_SINT)((array[0])), (((void *)0)), (_U_UINT)71, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((8)), (_U_SINT)((array[1])), (((void *)0)), (_U_UINT)72, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((11)), (_U_SINT)((array[2])), (((void *)0)), (_U_UINT)73, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((22)), (_U_SINT)((array[3])), (((void *)0)), (_U_UINT)74, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((33)), (_U_SINT)((array[4])), (((void *)0)), (_U_UINT)75, UNITY_DISPLAY_STYLE_INT);
+
+}

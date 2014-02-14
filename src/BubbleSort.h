@@ -3,6 +3,7 @@
 
 void compareAndSwap(int *first, int *second);
 void sortLargestToRightNost(int *array, int size);
+void bubbleSort(int *array, int size);
 	
 #endif // __BUBBLE_SORT_H_
 

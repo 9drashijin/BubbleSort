@@ -21,3 +21,14 @@ void sortLargestToRightMost(int *array, int size){
 	}
 	
 }
+
+void bubbleSort(int *array, int size){
+
+	//sortLargestToRightMost(array,size
+	//sortLargestToRightMost(array,size-1);
+	
+	for( ;size >=2 ; size--){
+	sortLargestToRightMost(array,size);
+	}
+	
+}
