@@ -1,0 +1,25 @@
+---
+:source:
+  :path: test
+  :file: test_BubbleSort.c
+:successes:
+- :test: test_ComapareAndSwap_should_not_swap_if_in_order
+  :line: 7
+  :message: ''
+- :test: test_ComapareAndSwap_should_swap_if_in_order
+  :line: 14
+  :message: ''
+- :test: test_ComapareAndSwap_should_not_swap_if_in_order_for_neg_number
+  :line: 21
+  :message: ''
+:failures:
+- :test: test_ComapareAndSwap_should_not_swap_if_not_in_order_for_neg_number
+  :line: 30
+  :message: Expected -5 Was -10
+:ignores: []
+:counts:
+  :total: 4
+  :passed: 3
+  :failed: 1
+  :ignored: 0
+:stdout: []

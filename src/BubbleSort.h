@@ -1,7 +1,9 @@
-#ifndef _BUBBLESORT_H_
-#define _BUBBLESORT_H_
-void compareAndSwap(int *first, int *second){
-	
-}
+#ifndef _BUBBLE_SORT_H_
+#define _BUBBLE_SORT_H_
 
-int array[]={1,5,10,12,10,3,5,6,7};
+void compareAndSwap(int *first, int *second);
+void sortLargestToRightNost(int *array, int size);
+	
+#endif // __BUBBLE_SORT_H_
+
+//int array[]={1,5,10,12,10,3,5,6,7};
