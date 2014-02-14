@@ -15,14 +15,17 @@
 - :test: test_ComapareAndSwap_should_not_swap_if_not_in_order_for_neg_number
   :line: 27
   :message: ''
-:failures:
-- :test: test_sortLargestToRightMost_should_move_largest_to_the_end
-  :line: 36
-  :message: Expected 9 Was 13
+- :test: test_sortLargestToRightMost_should_move_largest_to_the_end_for_2_element
+  :line: 33
+  :message: ''
+- :test: test_sortLargestToRightMost_should_move_largest_to_the_end_for_3_element
+  :line: 39
+  :message: ''
+:failures: []
 :ignores: []
 :counts:
-  :total: 5
-  :passed: 4
-  :failed: 1
+  :total: 6
+  :passed: 6
+  :failed: 0
   :ignored: 0
 :stdout: []

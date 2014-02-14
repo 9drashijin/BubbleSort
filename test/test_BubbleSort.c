@@ -25,8 +25,21 @@ void test_ComapareAndSwap_should_not_swap_if_in_order_for_neg_number(){
 	TEST_ASSERT_EQUAL(-5,array[1]);
 }
 void test_ComapareAndSwap_should_not_swap_if_not_in_order_for_neg_number(){
-	int array [] ={-10,-5};
+	int array [] ={-5,-10};
 	compareAndSwap(&array[0], &array[1]);
-	TEST_ASSERT_EQUAL(-5,array[0]);
-	TEST_ASSERT_EQUAL(-10,array[1]);
+	TEST_ASSERT_EQUAL(-10,array[0]);
+	TEST_ASSERT_EQUAL(-5,array[1]);
+}
+void test_sortLargestToRightMost_should_move_largest_to_the_end_for_2_element(){
+	int array [] ={13,9};
+	sortLargestToRightMost(array, 2);
+	TEST_ASSERT_EQUAL(9,array[0]);
+	TEST_ASSERT_EQUAL(13,array[1]);
+}
+void test_sortLargestToRightMost_should_move_largest_to_the_end_for_3_element(){
+	int array [] ={6,3,5};
+	sortLargestToRightMost(array, 3);
+	TEST_ASSERT_EQUAL(3,array[0]);
+	TEST_ASSERT_EQUAL(5,array[1]);
+	TEST_ASSERT_EQUAL(6,array[2]);
 }
